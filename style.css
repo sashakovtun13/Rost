@@ -1,0 +1,62 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 50px solid #000;
+    border-image: url('./img/land-png.png');
+    border-image-repeat: repeat;
+    border-image-slice: 300;
+    margin: 0 auto;
+}
+
+#ros {
+    width: 120px;
+    height: 120px;
+    background-image: url("./img/ros.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 165px;
+}
+
+.jump {
+    animation: rosJump 0.5s linear;
+}
+
+#vod {
+    width: 60px;
+    height: 60px;
+    background-image: url("./img/vod.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 60px;
+    left: 560px;
+    animation: vodMove 1.5s infinite linear;
+}
+
+@keyframes vodMove {
+    0% {
+        left: 560px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes rosJump {
+    0% {
+        top: 165px;
+    }
+    30% {
+        top: 100px;
+    }
+    50% {
+        top: 50px;
+    }
+    80% {
+        top: 100px;
+    }
+    100% {
+        top: 165px;
+    }
+}
